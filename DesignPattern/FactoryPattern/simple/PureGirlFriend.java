@@ -8,7 +8,7 @@ package FactoryPattern.simple;
 public class PureGirlFriend implements GirlFriend{
     @Override
     public void cooking() {
-        System.out.println("------清纯煲汤--------");
+        System.out.println("------清纯型女友为你煲汤--------");
     }
 
     @Override

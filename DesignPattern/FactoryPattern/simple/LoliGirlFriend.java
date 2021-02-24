@@ -8,7 +8,7 @@ package FactoryPattern.simple;
 public class LoliGirlFriend implements GirlFriend{
     @Override
     public void cooking() {
-        System.out.println("------萝莉煮鱼--------");
+        System.out.println("------萝莉型女友为你煮鱼--------");
     }
 
     @Override
