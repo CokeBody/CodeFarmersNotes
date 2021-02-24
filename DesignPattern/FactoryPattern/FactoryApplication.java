@@ -13,9 +13,7 @@ public class FactoryApplication {
     public static void main(String[] args) {
         //经典版
         GirlFriend girlFriend = GirlFriendFactory.getGirlFriend("loli");
-        if(girlFriend != null){
-            girlFriend.cooking();
-        }
+        girlFriend.cooking();
         //枚举版
         GirlFriend girlFriend2 = GirlFriendFactory.getGirlFriendV2("pure");
         girlFriend2.cooking();
