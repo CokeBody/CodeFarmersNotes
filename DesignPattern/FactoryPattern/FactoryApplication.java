@@ -17,7 +17,7 @@ public class FactoryApplication {
             girlFriend.cooking();
         }
         //枚举版
-        GirlFriend girlFriend2 = GirlFriendFactory.getGirlFriendV2("11");
+        GirlFriend girlFriend2 = GirlFriendFactory.getGirlFriendV2("pure");
         girlFriend2.cooking();
         //反射版
         GirlFriend girlFriend3 = GirlFriendFactory.getGirlFriendV3(RoyalSisterGirlFriend.class);
