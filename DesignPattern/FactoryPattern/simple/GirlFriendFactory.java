@@ -1,6 +1,11 @@
 package FactoryPattern.simple;
 
 
+import FactoryPattern.simple.entity.GirlFriend;
+import FactoryPattern.simple.entity.LoliGirlFriend;
+import FactoryPattern.simple.entity.PureGirlFriend;
+import FactoryPattern.simple.entity.RoyalSisterGirlFriend;
+
 /**
  * @author: Zhang
  * @description:
@@ -12,9 +17,9 @@ public class GirlFriendFactory {
     private static GirlFriend girlFriend;
 
     /**
-     * 经典版
+     * 经典版（简单工厂）
      */
-    public static GirlFriend getGirlFriend(String girlType){
+    public GirlFriend getGirlFriend(String girlType){
         switch (girlType){
             case "loli":
                 girlFriend = new LoliGirlFriend();
@@ -30,14 +35,14 @@ public class GirlFriendFactory {
     }
 
     /**
-     * 枚举优化版
+     * 枚举优化版（静态工厂）
      */
     public static GirlFriend getGirlFriendV2(String girlType){
         return GirlFriendType.getGirlFriend(girlType).get();
     }
 
     /**
-     * 反射优化版
+     * 反射优化版（静态工厂）
      */
     public static GirlFriend getGirlFriendV3(Class<? extends GirlFriend> clazz){
         try {

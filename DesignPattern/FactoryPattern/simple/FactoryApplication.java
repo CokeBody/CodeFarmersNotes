@@ -1,8 +1,8 @@
-package FactoryPattern;
+package FactoryPattern.simple;
 
-import FactoryPattern.simple.GirlFriend;
-import FactoryPattern.simple.GirlFriendFactory;
-import FactoryPattern.simple.RoyalSisterGirlFriend;
+
+import FactoryPattern.simple.entity.GirlFriend;
+import FactoryPattern.simple.entity.RoyalSisterGirlFriend;
 
 /**
  * @author: Zhang
@@ -12,7 +12,8 @@ import FactoryPattern.simple.RoyalSisterGirlFriend;
 public class FactoryApplication {
     public static void main(String[] args) {
         //经典版
-        GirlFriend girlFriend = GirlFriendFactory.getGirlFriend("loli");
+        GirlFriendFactory girlFriendFactory = new GirlFriendFactory();
+        GirlFriend girlFriend = girlFriendFactory.getGirlFriend("loli");
         girlFriend.cooking();
         //枚举版
         GirlFriend girlFriend2 = GirlFriendFactory.getGirlFriendV2("pure");

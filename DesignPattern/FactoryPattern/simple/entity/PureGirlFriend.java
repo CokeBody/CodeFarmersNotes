@@ -1,4 +1,4 @@
-package FactoryPattern.simple;
+package FactoryPattern.simple.entity;
 
 /**
  * @author: Zhang
@@ -9,10 +9,5 @@ public class PureGirlFriend implements GirlFriend{
     @Override
     public void cooking() {
         System.out.println("------清纯型女友为你煲汤--------");
-    }
-
-    @Override
-    public void sleep() {
-
     }
 }

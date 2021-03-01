@@ -1,5 +1,10 @@
 package FactoryPattern.simple;
 
+import FactoryPattern.simple.entity.GirlFriend;
+import FactoryPattern.simple.entity.LoliGirlFriend;
+import FactoryPattern.simple.entity.PureGirlFriend;
+import FactoryPattern.simple.entity.RoyalSisterGirlFriend;
+
 import java.util.function.Supplier;
 
 /**

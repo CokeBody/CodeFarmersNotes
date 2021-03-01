@@ -1,4 +1,4 @@
-package FactoryPattern.simple;
+package FactoryPattern.simple.entity;
 
 /**
  *
@@ -11,8 +11,4 @@ public interface GirlFriend {
      */
     void cooking();
 
-    /**
-     * sleep
-     */
-    void sleep();
 }
