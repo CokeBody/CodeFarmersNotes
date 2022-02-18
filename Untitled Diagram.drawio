@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-17T09:02:39.124Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36" etag="X60HXlWRY9IpAxluJ9ip" version="16.5.4" type="github">
-  <diagram id="8hflTopaYwpUwicBt4ha" name="Page-1">
-    <mxGraphModel dx="1564" dy="872" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2022-02-18T03:44:29.637Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36" etag="a6ja5bBNF-q6kKVQ6T60" version="16.5.4" type="github">
+  <diagram id="8hflTopaYwpUwicBt4ha" name="JVM">
+    <mxGraphModel dx="1117" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -109,16 +109,18 @@
             <mxPoint x="460" y="540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Qa5Skh6cjeM40z2EgNxe-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=17;" edge="1" parent="1" source="Qa5Skh6cjeM40z2EgNxe-43">
+        <mxCell id="Qa5Skh6cjeM40z2EgNxe-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=17;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="322.5" y="660" as="targetPoint" />
+            <mxPoint x="310" y="925" as="targetPoint" />
+            <mxPoint x="310" y="665" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="310" y="825" />
+              <mxPoint x="310" y="825" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Qa5Skh6cjeM40z2EgNxe-43" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=1;fontSize=17;strokeWidth=1;fillColor=none;gradientColor=none;gradientDirection=east;direction=south;" vertex="1" parent="1">
-          <mxGeometry x="220" y="930" width="200" height="20" as="geometry" />
-        </mxCell>
         <mxCell id="Qa5Skh6cjeM40z2EgNxe-46" value="新生代进行MinorGC存活年龄超多阈值的或&lt;span style=&quot;color: rgb(36 , 41 , 47) ; font-size: 16px&quot;&gt;Survivor相同年龄对象总和超过一半空间的，大于等于该年龄的对象；进入老年代&lt;/span&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=1;fontSize=17;strokeWidth=1;fillColor=none;gradientColor=none;gradientDirection=east;" vertex="1" parent="1">
-          <mxGeometry x="190" y="940" width="240" height="120" as="geometry" />
+          <mxGeometry x="190" y="930" width="240" height="120" as="geometry" />
         </mxCell>
         <mxCell id="Qa5Skh6cjeM40z2EgNxe-48" value="" style="endArrow=classic;html=1;rounded=0;fontSize=17;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Qa5Skh6cjeM40z2EgNxe-26" target="Qa5Skh6cjeM40z2EgNxe-34">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -135,12 +137,36 @@
         <mxCell id="Qa5Skh6cjeM40z2EgNxe-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.175;entryY=0.225;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=17;" edge="1" parent="1" source="Qa5Skh6cjeM40z2EgNxe-50" target="Qa5Skh6cjeM40z2EgNxe-22">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="160" y="360" />
+              <mxPoint x="280" y="360" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Qa5Skh6cjeM40z2EgNxe-50" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=1;fontSize=17;strokeWidth=1;fillColor=none;gradientColor=none;gradientDirection=east;direction=south;" vertex="1" parent="1">
-          <mxGeometry x="5" y="575" width="530" height="20" as="geometry" />
+          <mxGeometry x="26" y="575" width="506" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Qa5Skh6cjeM40z2EgNxe-52" value="&lt;font style=&quot;font-size: 14px&quot;&gt;存储类信息、常量、静态变量、编译后代码等&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=1;fontSize=17;strokeWidth=1;fillColor=#ffcc99;gradientDirection=east;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="30" y="420" width="177" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qa5Skh6cjeM40z2EgNxe-53" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.072;exitY=0.775;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Qa5Skh6cjeM40z2EgNxe-22" target="Qa5Skh6cjeM40z2EgNxe-52">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="430" as="sourcePoint" />
+            <mxPoint x="400" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qa5Skh6cjeM40z2EgNxe-54" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.894;exitY=0.885;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Qa5Skh6cjeM40z2EgNxe-22" target="Qa5Skh6cjeM40z2EgNxe-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="570" as="sourcePoint" />
+            <mxPoint x="400" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qa5Skh6cjeM40z2EgNxe-55" value="所有的对象都存储在堆，进行分配内存" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;labelBackgroundColor=none;sketch=1;fontSize=14;strokeWidth=1;fillColor=#ffcc99;gradientDirection=east;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="50" y="320" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qa5Skh6cjeM40z2EgNxe-56" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.106;exitY=0.115;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qa5Skh6cjeM40z2EgNxe-22" target="Qa5Skh6cjeM40z2EgNxe-55">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="325.5" as="sourcePoint" />
+            <mxPoint x="230" y="360" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
